@@ -13,7 +13,7 @@ JOTFORM_FORM_ID   = os.environ.get("JOTFORM_FORM_ID", "252566222647157")
 JOTFORM_FORM_ID_2 = os.environ.get("JOTFORM_FORM_ID_2", "252556565318060")
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
 FIREBASE_HOST     = "cashinflash-a1dce-default-rtdb.firebaseio.com"
-POLL_INTERVAL     = 60
+POLL_INTERVAL     = 10
 
 STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "jotform_state.json")
 TODAY = __import__("datetime").date.today().isoformat()
