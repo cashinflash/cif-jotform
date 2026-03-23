@@ -1,0 +1,15 @@
+services:
+  - type: worker
+    name: cif-jotform-processor
+    env: python
+    buildCommand: pip install --upgrade pip
+    startCommand: python worker.py
+    envVars:
+      - key: ANTHROPIC_API_KEY
+        sync: false
+      - key: JOTFORM_API_KEY
+        value: 9920086b812181a67a8d135ef649c11b
+      - key: JOTFORM_FORM_ID
+        value: "252566222647157"
+      - key: JOTFORM_FORM_ID_2
+        value: "252556565318060"
